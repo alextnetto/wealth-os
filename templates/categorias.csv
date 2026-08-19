@@ -1,0 +1,28 @@
+ordem,grupo,subcategoria,estimador,meta_mensal,obs
+1,alimentacao,supermercado,mediana12m,,
+2,alimentacao,restaurantes-bares,mediana12m,,
+3,alimentacao,delivery,mediana12m,,apps de entrega
+4,moradia-casa,aluguel-condominio,mediana12m,,quando pago por cartão ou boleto avulso
+5,moradia-casa,contas-casa,mediana12m,,água / luz / gás / internet
+6,moradia-casa,manutencao-casa,media12m,,reparos e reformas — gasto irregular
+7,transporte,combustivel,mediana12m,,
+8,transporte,apps-transporte,mediana12m,,Uber / 99 e similares
+9,transporte,estacionamento-pedagio,mediana12m,,
+10,transporte,manutencao-veiculo,media12m,,revisão / pneus / oficina — gasto irregular
+11,saude,plano-farmacia,mediana12m,,plano de saúde e farmácia
+12,saude,consultas-exames,media12m,,
+13,saude,academia-bem-estar,mediana12m,,
+14,pessoal-lazer,lazer-eventos,mediana12m,,cinema / shows / ingressos
+15,pessoal-lazer,cuidados-pessoais,mediana12m,,cabelo / estética
+16,pessoal-lazer,educacao-cursos,mediana12m,,cursos / livros
+17,pessoal-lazer,presentes-doacoes,media12m,,gasto irregular
+18,viagens,passagens-hospedagem,media12m,,gasto irregular — média captura melhor que mediana
+19,viagens,gastos-em-viagem,media12m,,alimentação e transporte durante viagem
+20,compras-bens,vestuario,mediana12m,,
+21,compras-bens,eletronicos,media12m,,gasto irregular
+22,compras-bens,casa-utilidades,mediana12m,,utensílios e itens de casa
+23,servicos-assinaturas,streaming-apps,mediana12m,,streaming / software / apps
+24,servicos-assinaturas,telefonia,mediana12m,,celular e planos
+25,servicos-assinaturas,servicos-profissionais,media12m,,contador / advogado e afins
+26,diversos,tarifas-taxas,mediana12m,,tarifas bancárias e IOF
+27,diversos,a-classificar,mediana12m,,fallback da classificação — gate: < 10% no mês fechado

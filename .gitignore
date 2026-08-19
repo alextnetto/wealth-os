@@ -1,0 +1,20 @@
+# dados do titular ficam no SEU repo privado; este template não deve receber dados
+
+# segredos e credenciais — nunca commitados, em nenhum repo
+.env
+.env.*
+*.key
+*.pem
+*.token
+token*.json
+credentials*.json
+
+# caches de agentes e ferramentas
+.claude/settings.local.json
+.playwright-mcp/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# sistema operacional
+.DS_Store

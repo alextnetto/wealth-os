@@ -1,0 +1,2 @@
+id,descricao,classe,freq,dia,meses,parcelas,valor_estimado,indexador,inicio,fim,fonte,obs
+ipva-carro,IPVA do carro em 3 cotas,imposto,anual,10,1;2;3,3,400,fixo,2026-01,,fontes/carro/README.md,EXEMPLO FICTÍCIO — substituir na F3
