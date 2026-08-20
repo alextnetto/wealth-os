@@ -1,2 +1,2 @@
 ordem,fonte,padrao_regex,grupo,subcategoria,obs
-1,cartao-exemplo,ifood|rappi,alimentacao,delivery,EXEMPLO FICTÍCIO — regex case-insensitive ancorada no comerciante e nunca no gateway de pagamento
+1,cartao-exemplo,ifood|rappi,alimentacao,delivery,EXEMPLO FICTÍCIO: regex case-insensitive ancorada no comerciante e nunca no gateway de pagamento

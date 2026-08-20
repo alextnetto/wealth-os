@@ -1,2 +1,2 @@
 item,classe,instituicao,valor,moeda,data_ref,fonte,obs
-carro,veiculos,,45000,BRL,2026-01-31,tabela FIPE 2026-01,EXEMPLO FICTÍCIO — substituir na F4; célula sem fonte é célula vazia + pendência
+carro,veiculos,,45000,BRL,2026-01-31,tabela FIPE 2026-01,EXEMPLO FICTÍCIO: substituir na F4; célula sem fonte é célula vazia + pendência

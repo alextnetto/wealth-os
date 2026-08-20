@@ -1,2 +1,2 @@
 fonte,data,padrao_descricao,grupo,subcategoria,obs
-extrato-exemplo,,PIX.*ALUGUEL,JA_CONTADO,,EXEMPLO FICTÍCIO — exceção permanente por prestador (data vazia casa qualquer data); fixo já contado no orçamento e não recontado no ledger (JA_CONTADO usa subcategoria vazia); padrao_descricao é regex
+extrato-exemplo,,PIX.*ALUGUEL,JA_CONTADO,,EXEMPLO FICTÍCIO: exceção permanente por prestador (data vazia casa qualquer data); fixo já contado no orçamento e não recontado no ledger (JA_CONTADO usa subcategoria vazia); padrao_descricao é regex

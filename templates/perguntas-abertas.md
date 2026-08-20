@@ -1,20 +1,21 @@
-<!-- instruções pro agente:
-Copie para `plan/perguntas-abertas.md` na F0. Este arquivo é uma VISTA DE LEITURA, nunca o
-registro primário: consolide aqui as pendências de proximos-passos.md (e as espalhadas em
+<!-- instruções para o agente:
+Copie para `plan/perguntas-abertas.md` na F0. Este arquivo é uma vista de leitura, nunca o
+registro primário: consolide aqui as pendências de proximos-passos.md (e as registradas em
 READMEs de fontes), separadas por tipo de resposta esperada, cada uma citando o item de origem
-pelo número (#N). Regenerar a vista inteira a cada rotina mensal é o comportamento correto;
-editar data-limite ou status SÓ aqui é errado — esses campos vivem no registro. Toda entrada
-carrega valor em jogo e o que muda conforme a resposta: pergunta sem consequência declarada não
-pressiona ninguém a responder. Substitua as linhas de exemplo ao gerar a primeira vista real.
+pelo número (#N). Regenerar a vista completa a cada rotina mensal é o comportamento correto.
+É errado editar data-limite ou status apenas nesta vista: esses campos vivem no registro. Toda
+entrada carrega o valor em jogo e o que muda conforme a resposta: pergunta sem consequência
+declarada tende a ficar sem resposta. Substitua as linhas de exemplo ao gerar a primeira vista
+real.
 -->
 
-# Perguntas abertas — vista consolidada
+# Perguntas abertas: vista consolidada
 
-Tudo o que espera o titular, num lugar só, separado pelo tipo de resposta que destrava.
-**Registro primário: [proximos-passos.md](proximos-passos.md)** — lá vivem número, data-limite
-e status; esta vista é regerada de lá a cada rotina mensal. Regra de conteúdo: cada entrada diz
-**o valor em jogo** e **o que muda conforme a resposta** — é isso que transforma uma lista de
-tarefas em uma fila de decisões.
+Tudo o que espera o titular, em um só lugar, separado pelo tipo de resposta esperada.
+**Registro primário: [proximos-passos.md](proximos-passos.md).** Número, data-limite e status
+vivem lá; o agente regera esta vista a partir de lá a cada rotina mensal. Regra de conteúdo:
+cada entrada diz **o valor em jogo** e **o que muda conforme a resposta**. Isso transforma uma
+lista de tarefas em uma fila de decisões.
 
 ## Perguntas ao titular (decidir)
 
@@ -32,4 +33,4 @@ tarefas em uma fila de decisões.
 
 | Ref | Questão | Proposta do agente | Status |
 |---|---|---|---|
-| #<N> | <ex.: imóvel entra no balanço a custo ou a mercado?> | <ex.: a custo; mercado só com avaliação — regra conservadora> | <aguardando confirmação> |
+| #<N> | <ex.: imóvel entra no balanço a custo ou a mercado?> | <ex.: a custo; mercado só com avaliação (regra conservadora)> | <aguardando confirmação> |

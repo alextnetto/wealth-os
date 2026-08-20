@@ -1,6 +1,6 @@
-# dados do titular ficam no SEU repo privado; este template não deve receber dados
+# dados do titular ficam no repo privado do titular; este template não deve receber dados
 
-# segredos e credenciais — nunca commitados, em nenhum repo
+# segredos e credenciais: nunca commitados, em nenhum repo
 .env
 .env.*
 *.key
