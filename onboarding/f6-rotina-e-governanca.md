@@ -113,13 +113,19 @@ onboarding justifica):
 - **Amortizar × investir**: se há dívida cara, custo efetivo da dívida vs alternativas líquidas.
 - **Estrutura de retirada PJ→PF**: se há PJ, pró-labore × distribuição e carga total legal;
   valide com o contador antes de implementar.
+- **Holding imobiliária**: se há imóveis, pessoa física × holding para aluguel e sucessão.
+- **Offshore**: se há patrimônio ou renda no exterior, estrutura adequada e obrigações de
+  declaração.
 - **Previdência**: PGBL × VGBL conforme regime de declaração do IRPF e horizonte.
 - **Mapa tributário do patrimônio**: carga atual por fonte de renda e oportunidades legais.
 - **Onde alocar a reserva de emergência**: se a reserva existe mas rende mal.
 
 Formato de entrega: análise datada em `docs/relatorios/`, com fontes citadas, premissas
 explícitas, cenários e recomendação + opções. Análise sem fonte e sem premissa não vai ao
-comitê. Recomendação que o titular não consegue auditar não sustenta decisão.
+comitê. Recomendação que o titular não consegue auditar não sustenta decisão. Toda análise
+segue [principios/analises.md](../principios/analises.md) e usa o molde
+[templates/analise.md](../templates/analise.md); matéria tributária ou jurídica exige validação
+de contador ou advogado antes de implementar.
 
 ## Revisão anual do mandato
 

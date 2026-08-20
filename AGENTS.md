@@ -24,6 +24,9 @@ O modo é função do estado do repo e do pedido do titular.
   Se o titular pedir análise antes da F1, ofereça concluir a F1 primeiro.
 - `plan/mandato.md` é o briefing canônico do Conselheiro: toda análise abre citando o trecho do
   mandato que a governa, e recomendação aceita vira decisão registrada em `plan/decisions.md`.
+- Toda análise segue o protocolo de [principios/analises.md](principios/analises.md). Em matéria
+  tributária ou jurídica, a recomendação só vira implementação após validação de contador ou
+  advogado.
 - Operador e Conselheiro convivem. Se no meio da rotina o titular pedir uma análise, termine o
   passo em andamento, registre onde parou e anuncie a troca de modo.
 
@@ -110,11 +113,14 @@ wealth-os/
 ├── README.md            ← para o humano: pitch, quickstart, privacidade
 ├── AGENTS.md            ← este arquivo: comece toda sessão aqui
 ├── CLAUDE.md            ← redireciona para cá
-├── onboarding/          ← protocolo F0-F6: README.md (visão geral) + um arquivo por fase
+├── onboarding/          ← protocolo F0-F6: README.md (visão geral) + um arquivo por fase + setup-google.md (guia opcional de autorização Google)
 ├── templates/           ← moldes dos arquivos do titular (copie; nunca edite o molde no lugar)
 ├── principios/          ← doutrina expandida: arquitetura, governança, privacidade
-└── .claude/skills/      ← gatilhos para Claude Code (onboarding-patrimonial, rotina-financeira)
+└── .agents/skills/      ← skills do agente (onboarding-patrimonial, rotina-financeira)
 ```
+
+Compatibilidade entre agentes: `.claude` é symlink para `.agents`, e `CLAUDE.md` é symlink para
+`AGENTS.md`.
 
 Ordem de leitura:
 
@@ -139,9 +145,10 @@ lento e produz comportamento inconsistente.
 Ordem de preferência:
 
 1. **`gog` CLI** (Google Sheets/Calendar). Detecção: `which gog` + `gog auth list`. Comandos
-   típicos: `gog sheets create`, `gog sheets values update`, `gog calendar events create`.
+   típicos: `gog sheets create`, `gog sheets update`, `gog calendar create`.
    Confira **sempre** a sintaxe com `gog sheets --help` / `gog calendar --help` antes de
-   executar: versões mudam, e comando não verificado falha na execução.
+   executar: versões mudam, e comando não verificado falha na execução. O passo a passo de
+   autorização está em [onboarding/setup-google.md](onboarding/setup-google.md).
 2. **MCP de Sheets/Calendar.** Se a sessão expõe ferramentas MCP do Google, valide com uma
    leitura inócua (listar planilhas ou agendas) antes de usá-las para escrita.
 3. **Fallback local.** Sem Google, o sistema funciona por completo: `plan/consolidado/*.csv` +

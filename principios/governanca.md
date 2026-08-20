@@ -107,7 +107,8 @@ sessão cair na pergunta 6, a próxima começa da 7, não do zero.
 2. **Desvios e rebalanceamento.** O que está fora da banda e o que fazer (decisão do titular;
    desvio de IPS vira pauta, **nunca rebalanceamento automático**).
 3. **Riscos.** Revisão de `plan/riscos.md`: gatilhos disparados? Severidades mudaram?
-4. **Análises do trimestre.** A fila de estudos encomendados (ex.: amortizar × investir).
+4. **Análises do trimestre.** A fila de estudos encomendados (ex.: amortizar × investir). O
+   protocolo de pesquisa e verificação de cada análise está em [`analises.md`](analises.md).
 5. **Decisões.** Ata em `plan/decisions.md`, no formato padrão.
 
 **Racional:** decisões de alocação tomadas dentro do mês reagem a ruído; agrupá-las em cadência

@@ -84,6 +84,10 @@ Registre o resultado em `plan/ferramentas.md`. Schema simples, uma linha por fer
 Racional do registro: as fases F5-F6 leem este arquivo para decidir o caminho de publicação
 sem re-testar, e o contexto sobrevive à troca de agente (de Claude para outro).
 
+Se o titular quiser Google e o `gog` não estiver autorizado, siga
+[setup-google.md](setup-google.md): leva 10 a 15 minutos e pode ser adiado até antes da F5.
+A escolha fica registrada em `plan/ferramentas.md`.
+
 ## Passo 3. Esqueleto do plano
 
 Crie a estrutura mínima de dados do titular (o template traz apenas protocolo e moldes; os

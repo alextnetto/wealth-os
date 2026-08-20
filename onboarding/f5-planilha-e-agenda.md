@@ -55,6 +55,8 @@ a idempotência quebra e a agenda duplica.
 
 ### Rota `gog` (CLI)
 
+Se o `gog` ainda não estiver autorizado, siga [setup-google.md](setup-google.md) antes desta rota.
+
 A sequência abaixo é o **roteiro, não a sintaxe**. Flags e subcomandos variam entre versões do
 `gog`: rode `gog sheets --help` (e o `--help` de cada subcomando) antes de executar e adapte.
 **Não invente flag.** Se um comando falhar por sintaxe, releia o help; não tente variações não
@@ -63,7 +65,7 @@ documentadas.
 ```
 gog sheets --help                    # sempre primeiro: confirme subcomandos e flags desta versão
 gog sheets create ...                # criar "wealth-os: planilha mestra"; capture o ID da saída
-gog sheets values update ...         # escrever cada aba a partir do CSV consolidado
+gog sheets update ...                # escrever cada aba a partir do CSV consolidado
 # formatação mínima: header em negrito/congelado, colunas de valor como moeda; só se o
 # subcomando existir nesta versão. Formatação nunca justifica inventar sintaxe
 ```
