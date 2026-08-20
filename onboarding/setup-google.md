@@ -32,20 +32,24 @@ exato.
    e cria um projeto novo (nome livre; sugestão: `wealth-os`).
 2. **Habilitar as APIs.** No projeto, em APIs e serviços, Biblioteca: o titular habilita a
    **Google Sheets API** e a **Google Calendar API**.
-3. **Configurar a tela de consentimento (OAuth consent screen).** Tipo **Externo**, em modo de
-   teste (Testing). O titular adiciona o próprio e-mail como test user. Em modo de teste, só
-   contas listadas como test user conseguem autorizar.
-4. **Criar a credencial.** Em Credenciais: o titular cria um **OAuth client ID** do tipo
+3. **Configurar a tela de consentimento (OAuth consent screen).** Tipo **Externo**. O titular
+   adiciona o próprio e-mail como test user.
+4. **Publicar o app (evita reautorizar toda semana).** App Externo em modo de teste (Testing)
+   emite refresh token que expira em 7 dias; a rotina mensal quebraria a cada execução. Em
+   Audience (Público), o titular clica em **Publish app** e confirma: o app passa a
+   "In production". Isso não submete o app à verificação do Google; app pessoal não verificado
+   pode operar em produção. Fonte: [quickstart do gog](https://github.com/openclaw/gogcli/blob/main/docs/quickstart.md).
+5. **Criar a credencial.** Em Credenciais: o titular cria um **OAuth client ID** do tipo
    **Desktop app** e baixa o JSON.
-5. **Instalar o gog.** O titular instala o `gog`. macOS: `brew install openclaw/tap/gogcli`.
+6. **Instalar o gog.** O titular instala o `gog`. macOS: `brew install openclaw/tap/gogcli`.
    Outros sistemas: instruções no [repositório do gog](https://github.com/openclaw/gogcli).
-6. **Registrar a credencial no gog:**
+7. **Registrar a credencial no gog:**
 
    ```bash
-   gog auth credentials <caminho-do-json>
+   gog auth credentials set <caminho-do-json>
    ```
 
-7. **Autorizar a conta:**
+8. **Autorizar a conta:**
 
    ```bash
    gog auth add <email-do-titular> --services sheets,calendar
@@ -55,9 +59,10 @@ exato.
    exportar planilhas, e a tela de consentimento pede esse acesso. Quem quiser Drive mais
    restrito confere `gog auth add --help` (existe a flag `--drive-scope full|readonly|file`)
    e valida os escopos resultantes com `gog auth services` e `gog auth list`. O navegador
-   abre; o titular escolhe a conta e aprova. Se algum comando falhar por sintaxe, confira
-   com `gog auth --help`: versões mudam.
-8. **Validar.**
+   abre; o titular escolhe a conta e aprova. Em sessão sem navegador, `--manual` imprime a URL
+   para colar de volta. Se algum comando falhar por sintaxe, confira com `gog auth --help`:
+   versões mudam.
+9. **Validar.**
 
    ```bash
    gog auth list
@@ -66,9 +71,9 @@ exato.
    A conta deve aparecer com os serviços `sheets` e `calendar`. Complete com uma leitura inócua
    (por exemplo, listar planilhas ou agendas; confira o subcomando com `gog sheets --help` /
    `gog calendar --help`).
-9. **Registrar em `plan/ferramentas.md`:** ferramenta, status, escopo autorizado, data (schema
-   da F0). A F5 e a rotina mensal leem esse arquivo para decidir a rota de publicação.
-10. **Guardar o JSON fora do repo.** Mover o arquivo baixado para fora de `Downloads`, para o
+10. **Registrar em `plan/ferramentas.md`:** ferramenta, status, escopo autorizado, data (schema
+    da F0). A F5 e a rotina mensal leem esse arquivo para decidir a rota de publicação.
+11. **Guardar o JSON fora do repo.** Mover o arquivo baixado para fora de `Downloads`, para o
     local onde o titular guarda credenciais, e nunca commitá-lo. O `.gitignore` cobre
     `credentials*.json`, mas o arquivo não deve entrar na pasta do repo.
 
