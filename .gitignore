@@ -11,6 +11,7 @@ credentials*.json
 
 # caches de agentes e ferramentas
 .claude/settings.local.json
+.agents/settings.local.json
 .playwright-mcp/
 .pytest_cache/
 __pycache__/
